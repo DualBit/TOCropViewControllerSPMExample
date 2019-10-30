@@ -12,7 +12,7 @@
 		FCD125562369A0A50068D39E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD125542369A0A50068D39E /* Main.storyboard */; };
 		FCD125582369A0A60068D39E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD125572369A0A60068D39E /* Assets.xcassets */; };
 		FCD1255B2369A0A60068D39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD125592369A0A60068D39E /* LaunchScreen.storyboard */; };
-		FCD125672369B3050068D39E /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FCD125662369B3050068D39E /* TOCropViewController */; };
+		FCD1256D2369B89F0068D39E /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FCD1256C2369B89F0068D39E /* CropViewController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCD125672369B3050068D39E /* TOCropViewController in Frameworks */,
+				FCD1256D2369B89F0068D39E /* CropViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = TOCropViewControllerSPMExample;
 			packageProductDependencies = (
-				FCD125662369B3050068D39E /* TOCropViewController */,
+				FCD1256C2369B89F0068D39E /* CropViewController */,
 			);
 			productName = TOCropViewControllerSPMExample;
 			productReference = FCD1254B2369A0A50068D39E /* TOCropViewControllerSPMExample.app */;
@@ -114,7 +114,7 @@
 			);
 			mainGroup = FCD125422369A0A50068D39E;
 			packageReferences = (
-				FCD125652369B3050068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+				FCD1256B2369B89F0068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */,
 			);
 			productRefGroup = FCD1254C2369A0A50068D39E /* Products */;
 			projectDirPath = "";
@@ -344,21 +344,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FCD125652369B3050068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+		FCD1256B2369B89F0068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/simone/Downloads/TOCropViewController";
+			repositoryURL = "https://github.com/DualBit/TOCropViewController.git";
 			requirement = {
-				branch = master;
+				branch = package;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FCD125662369B3050068D39E /* TOCropViewController */ = {
+		FCD1256C2369B89F0068D39E /* CropViewController */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FCD125652369B3050068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */;
-			productName = TOCropViewController;
+			package = FCD1256B2369B89F0068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

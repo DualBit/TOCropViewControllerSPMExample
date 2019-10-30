@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import TOCropViewController
+import CropViewController
 
 
-class ViewController: UIViewController, TOCropViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, CropViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     private let imageView = UIImageView()
     
     private var image: UIImage?
-    private var croppingStyle = TOCropViewCroppingStyle.default
+    private var croppingStyle = CropViewCroppingStyle.default
     
     private var croppedRect = CGRect.zero
     private var croppedAngle = 0
@@ -23,7 +23,7 @@ class ViewController: UIViewController, TOCropViewControllerDelegate, UIImagePic
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = (info[UIImagePickerController.InfoKey.originalImage] as? UIImage) else { return }
         
-        let cropController = TOCropViewController(croppingStyle: croppingStyle, image: image)
+        let cropController = CropViewController(croppingStyle: croppingStyle, image: image)
         //cropController.modalPresentationStyle = .fullScreen
         cropController.delegate = self
         
@@ -69,19 +69,19 @@ class ViewController: UIViewController, TOCropViewControllerDelegate, UIImagePic
         }
     }
     
-    public func cropViewController(_ cropViewController: TOCropViewController, didCropTo image: UIImage, with cropRect: CGRect, angle: Int) {
+    public func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         self.croppedRect = cropRect
         self.croppedAngle = angle
         updateImageViewWithImage(image, fromCropViewController: cropViewController)
     }
     
-    public func cropViewController(_ cropViewController: TOCropViewController, didCropToCircularImage image: UIImage, with cropRect: CGRect, angle: Int) {
+    public func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         self.croppedRect = cropRect
         self.croppedAngle = angle
         updateImageViewWithImage(image, fromCropViewController: cropViewController)
     }
     
-    public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: TOCropViewController) {
+    public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: CropViewController) {
         imageView.image = image
         layoutImageView()
         
@@ -90,7 +90,7 @@ class ViewController: UIViewController, TOCropViewControllerDelegate, UIImagePic
         if cropViewController.croppingStyle != .circular {
             imageView.isHidden = true
             
-            cropViewController.dismissAnimatedFrom(self, croppedImage: image,
+            cropViewController.dismissAnimatedFrom(self, withCroppedImage: image,
                                                    toView: imageView,
                                                    toFrame: CGRect.zero,
                                                    setup: { self.layoutImageView() },
@@ -165,7 +165,7 @@ class ViewController: UIViewController, TOCropViewControllerDelegate, UIImagePic
     
     @objc public func didTapImageView() {
         // When tapping the image view, restore the image to the previous cropping state
-        let cropViewController = TOCropViewController(croppingStyle: self.croppingStyle, image: self.image!)
+        let cropViewController = CropViewController(croppingStyle: self.croppingStyle, image: self.image!)
         cropViewController.delegate = self
         let viewFrame = view.convert(imageView.frame, to: navigationController!.view)
         
@@ -174,7 +174,7 @@ class ViewController: UIViewController, TOCropViewControllerDelegate, UIImagePic
                                                fromView: nil,
                                                fromFrame: viewFrame,
                                                angle: self.croppedAngle,
-                                               toFrame: self.croppedRect,
+                                               toImageFrame: self.croppedRect,
                                                setup: { self.imageView.isHidden = true },
                                                completion: nil)
     }
@@ -220,4 +220,3 @@ class ViewController: UIViewController, TOCropViewControllerDelegate, UIImagePic
         present(activityController, animated: true, completion: nil)
     }
 }
-
