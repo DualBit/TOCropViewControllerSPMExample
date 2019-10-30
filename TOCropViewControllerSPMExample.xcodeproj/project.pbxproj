@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCD1254F2369A0A50068D39E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1254E2369A0A50068D39E /* AppDelegate.swift */; };
+		FCD125532369A0A50068D39E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD125522369A0A50068D39E /* ViewController.swift */; };
+		FCD125562369A0A50068D39E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD125542369A0A50068D39E /* Main.storyboard */; };
+		FCD125582369A0A60068D39E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD125572369A0A60068D39E /* Assets.xcassets */; };
+		FCD1255B2369A0A60068D39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD125592369A0A60068D39E /* LaunchScreen.storyboard */; };
+		FCD125672369B3050068D39E /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FCD125662369B3050068D39E /* TOCropViewController */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FCD1254B2369A0A50068D39E /* TOCropViewControllerSPMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOCropViewControllerSPMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD1254E2369A0A50068D39E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCD125522369A0A50068D39E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCD125552369A0A50068D39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCD125572369A0A60068D39E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCD1255A2369A0A60068D39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCD1255C2369A0A60068D39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCD125482369A0A50068D39E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD125672369B3050068D39E /* TOCropViewController in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCD125422369A0A50068D39E = {
+			isa = PBXGroup;
+			children = (
+				FCD1254D2369A0A50068D39E /* TOCropViewControllerSPMExample */,
+				FCD1254C2369A0A50068D39E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCD1254C2369A0A50068D39E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1254B2369A0A50068D39E /* TOCropViewControllerSPMExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCD1254D2369A0A50068D39E /* TOCropViewControllerSPMExample */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1254E2369A0A50068D39E /* AppDelegate.swift */,
+				FCD125522369A0A50068D39E /* ViewController.swift */,
+				FCD125542369A0A50068D39E /* Main.storyboard */,
+				FCD125572369A0A60068D39E /* Assets.xcassets */,
+				FCD125592369A0A60068D39E /* LaunchScreen.storyboard */,
+				FCD1255C2369A0A60068D39E /* Info.plist */,
+			);
+			path = TOCropViewControllerSPMExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCD1254A2369A0A50068D39E /* TOCropViewControllerSPMExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD1255F2369A0A60068D39E /* Build configuration list for PBXNativeTarget "TOCropViewControllerSPMExample" */;
+			buildPhases = (
+				FCD125472369A0A50068D39E /* Sources */,
+				FCD125482369A0A50068D39E /* Frameworks */,
+				FCD125492369A0A50068D39E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TOCropViewControllerSPMExample;
+			packageProductDependencies = (
+				FCD125662369B3050068D39E /* TOCropViewController */,
+			);
+			productName = TOCropViewControllerSPMExample;
+			productReference = FCD1254B2369A0A50068D39E /* TOCropViewControllerSPMExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD125432369A0A50068D39E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Simone Gasparini";
+				TargetAttributes = {
+					FCD1254A2369A0A50068D39E = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = FCD125462369A0A50068D39E /* Build configuration list for PBXProject "TOCropViewControllerSPMExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCD125422369A0A50068D39E;
+			packageReferences = (
+				FCD125652369B3050068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+			);
+			productRefGroup = FCD1254C2369A0A50068D39E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCD1254A2369A0A50068D39E /* TOCropViewControllerSPMExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCD125492369A0A50068D39E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD1255B2369A0A60068D39E /* LaunchScreen.storyboard in Resources */,
+				FCD125582369A0A60068D39E /* Assets.xcassets in Resources */,
+				FCD125562369A0A50068D39E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCD125472369A0A50068D39E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD125532369A0A50068D39E /* ViewController.swift in Sources */,
+				FCD1254F2369A0A50068D39E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCD125542369A0A50068D39E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD125552369A0A50068D39E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCD125592369A0A60068D39E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD1255A2369A0A60068D39E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCD1255D2369A0A60068D39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCD1255E2369A0A60068D39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCD125602369A0A60068D39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67B448B2RP;
+				INFOPLIST_FILE = TOCropViewControllerSPMExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dualbit.TOCropViewControllerSPMExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCD125612369A0A60068D39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67B448B2RP;
+				INFOPLIST_FILE = TOCropViewControllerSPMExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dualbit.TOCropViewControllerSPMExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCD125462369A0A50068D39E /* Build configuration list for PBXProject "TOCropViewControllerSPMExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD1255D2369A0A60068D39E /* Debug */,
+				FCD1255E2369A0A60068D39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD1255F2369A0A60068D39E /* Build configuration list for PBXNativeTarget "TOCropViewControllerSPMExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD125602369A0A60068D39E /* Debug */,
+				FCD125612369A0A60068D39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCD125652369B3050068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/simone/Downloads/TOCropViewController";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCD125662369B3050068D39E /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCD125652369B3050068D39E /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FCD125432369A0A50068D39E /* Project object */;
+}
